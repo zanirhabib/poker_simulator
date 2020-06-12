@@ -1,35 +1,17 @@
 #include<stdio.h>
 #include<iostream>
-#include <cstdlib>
+#include <vector>
 
 using namespace std;
 
-char * distribute_hands(int numHands)
+void print_vect(vector<int> &abc)
 {
 
-    //return array of pointers to arrays of hands
-    for(int i = 0; i < numHands; i++)
-    {
-    	for(int i = 0; i < 3; i++)
+	vector<int>::iterator it;
+	for(unsigned int i = 0;i< abc.size();i++)
 	{
-	    //check value, if value is good, pop to array
-	}
-	//set a random number between 1 and 13 (represents each of the cards)
-         
-	//pair with a suit
-	//check if it already exists
-   	
-
-	
-
-
-    }	
-    char test1[3] = {'a','b','c'};
-    char* ptr;
-    ptr = test1;
-    char test2[3] = {'d','e','f'};
-
-    //eac
+		cout << abc[i] << endl;
+	}	
 
 }
 
@@ -37,13 +19,15 @@ char * distribute_hands(int numHands)
 int main()
 {
 
-    //distribute cards
-    int numHands;
-    numHands = 0;
-    scanf("%d", &numHands);
-    //distribute_hands(numHands);
-    int ra[3] = {2,1};
-    cout << *ra << endl;
+
+	vector<int> wow1;
+	wow1.push_back(120);
+	wow1.push_back(110); 
+	print_vect(wow1);
+	vector<int> wow;
+	wow.push_back(20);
+	wow.push_back(10); 
+	print_vect(wow);
 }
 
 
